@@ -1,5 +1,5 @@
 class Player < ApplicationRecord
-  enum :position, { setter: 0, libero: 1, hitters: 2 }
+  enum :position, { setter: 'setter', libero: 'libero', hitter: 'hitter' }
 
   with_options presence: true do
     validates :name, :position
